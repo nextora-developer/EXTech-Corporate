@@ -242,6 +242,14 @@ a {
   opacity: 0.4;
 }
 
+/* Breadcrumb – center on mobile only */
+@media (max-width: 991.98px) {
+  .breadcrumb-modern {
+    justify-content: center;
+    text-align: center;
+  }
+}
+
 .btn-extech-primary {
   border-radius: 999px;
   border: 1px solid var(--extech-accent);
@@ -718,6 +726,19 @@ a {
   font-size: 1rem;
 }
 
+/* CTA buttons – mobile only */
+@media (max-width: 991.98px) {
+  .section-cta .d-flex {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .section-cta .d-flex .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
 /* optional: little glow under buttons */
 /* .section-cta::after {
   content: "";
@@ -1017,7 +1038,7 @@ a {
   background-attachment: scroll;
   /* min-height: 70vh; */
   padding-top: 140px;
-  padding-bottom: 140px;
+  padding-bottom: 80px;
 }
 
 .section-story-wow {
@@ -1028,8 +1049,8 @@ a {
       transparent 55%
     ),
     #020617;
-  padding-top: 160px;
-  padding-bottom: 200px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .story-shell {
@@ -1237,11 +1258,13 @@ a {
 .section-values {
   padding: 140px 0;
   background: radial-gradient(
-      circle at top left,
+      circle at bottom left,
       rgba(37, 99, 235, 0.16),
       transparent 55%
     ),
     #020617;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .values-header {
@@ -1282,6 +1305,8 @@ a {
 .section-mission-vision {
   padding: 140px 0;
   background: #020617;
+  padding-top: 90px;
+  padding-bottom: 90px;
 }
 
 .mission-vision-header {
@@ -1424,6 +1449,7 @@ a {
 .section-process-simple {
   padding: 120px 0 90px;
   background: #020617;
+  padding-top: 80px;
 }
 
 .process-grid {
@@ -1523,8 +1549,8 @@ a {
 /* 整体背景保持深色，不脏不灰 */
 .section-contact {
   position: relative;
-  padding-top: 150px;
-  padding-bottom: 150px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 /* 左侧卡片堆叠 */
@@ -1665,8 +1691,8 @@ a {
       transparent 55%
     ),
     #020617;
-  padding-top: 160px;
-  padding-bottom: 160px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 /* 每个点 */
@@ -1819,6 +1845,7 @@ a {
 /* Our Process Section */
 .section-process-extech {
   background: #020617;
+  padding-bottom: 150px;
 }
 
 /* Grid：desktop 4 个一排，mobile 自动换行 */
@@ -1906,7 +1933,7 @@ a {
 /* Pricing section */
 .section-pricing {
   background: radial-gradient(
-      circle at top left,
+      circle at bottom left,
       rgba(37, 99, 235, 0.16),
       transparent 55%
     ),
@@ -2017,19 +2044,40 @@ a {
 .custom-process-extech-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  justify-items: center; 
+  justify-items: center;
   gap: 1.8rem;
 }
 
 @media (max-width: 991px) {
-    .custom-process-extech-grid {
-        grid-template-columns: repeat(2, 1fr); /* Tablet → 两排 */
-    }
+  .custom-process-extech-grid {
+    grid-template-columns: repeat(2, 1fr); /* Tablet → 两排 */
+  }
 }
 
 @media (max-width: 576px) {
-    .custom-process-extech-grid {
-        grid-template-columns: 1fr; /* 手机 → 一排一个 */
-    }
+  .custom-process-extech-grid {
+    grid-template-columns: 1fr; /* 手机 → 一排一个 */
+  }
 }
 
+/* -----------------------------
+   EXTECH SYSTEM INTEGRATION 
+------------------------------ */
+.system-process-extech-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  gap: 1.8rem;
+}
+
+@media (max-width: 991px) {
+  .system-process-extech-grid {
+    grid-template-columns: repeat(2, 1fr); /* Tablet → 两排 */
+  }
+}
+
+@media (max-width: 576px) {
+  .system-process-extech-grid {
+    grid-template-columns: 1fr; /* 手机 → 一排一个 */
+  }
+}
