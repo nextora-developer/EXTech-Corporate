@@ -383,6 +383,22 @@ a {
   filter: blur(0px);
 }
 
+/* Solve nav collapse problem */
+@media (hover: none) and (pointer: coarse) {
+  .reveal-from-right,
+  .reveal-from-left {
+    transform: translateY(10px) !important; /* 小一点 */
+    filter: none !important; /* blur 关掉最关键 */
+    transition: opacity 0.4s ease, transform 0.4s ease !important;
+  }
+
+  .reveal-from-right.in-view,
+  .reveal-from-left.in-view {
+    transform: translateY(0) !important;
+    opacity: 1 !important;
+  }
+}
+
 /* Footer */
 .footer {
   border-top: 1px solid rgba(148, 163, 184, 0.25);
