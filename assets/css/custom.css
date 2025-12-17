@@ -900,7 +900,8 @@ a {
   /* 全站左右 padding 缩窄 */
 
   .navbar {
-    background: rgba(3, 10, 25, 0.96) !important;
+    background: transparent;
+    /* background: rgba(3, 10, 25, 0.96) !important; */
     backdrop-filter: blur(14px) !important;
   }
 
