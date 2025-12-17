@@ -1857,6 +1857,103 @@ a {
   pointer-events: none;
 }
 
+.extech-tabs {
+  gap: 10px;
+  padding: 6px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.extech-tabs .nav-link {
+  border: 0;
+  border-radius: 999px;
+  padding: 10px 18px;
+  color: rgba(255, 255, 255, 0.7);
+  background: transparent;
+  font-weight: 600;
+}
+
+.extech-tabs .nav-link.active {
+  color: rgba(255, 255, 255, 0.95);
+  background: rgba(25, 179, 255, 0.18);
+  border: 1px solid rgba(25, 179, 255, 0.4);
+  box-shadow: 0 0 22px rgba(25, 179, 255, 0.14);
+  border: none;
+}
+
+/* Disable active underline ONLY for extech tabs */
+.extech-tabs .nav-link.active::after {
+  display: none !important;
+  content: none !important;
+}
+
+/* Landing sections cards */
+.types-card {
+  border-radius: 18px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.06) inset,
+    0 18px 55px rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(10px);
+  transition: transform 0.25s ease, border-color 0.25s ease,
+    box-shadow 0.25s ease;
+
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.types-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(25, 179, 255, 0.35);
+  box-shadow: 0 0 0 1px rgba(25, 179, 255, 0.16) inset,
+    0 22px 70px rgba(0, 0, 0, 0.55);
+}
+
+.types-card-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+
+  background: rgba(25, 179, 255, 0.14);
+  border: 1px solid rgba(25, 179, 255, 0.35);
+  box-shadow: 0 0 25px rgba(25, 179, 255, 0.12);
+}
+
+.types-card-icon i {
+  font-size: 20px;
+  color: rgba(25, 179, 255, 0.95);
+}
+
+.types-card-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 8px;
+}
+
+.types-card-list li {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  gap: 8px;
+}
+
+.types-card-list li::before {
+  content: "•";
+  color: #19b3ff;
+  font-weight: 700;
+}
+
 /* 小屏幕 spacing 微调 */
 @media (max-width: 991.98px) {
   .types-text-block {
@@ -1876,7 +1973,7 @@ a {
 /* Our Process Section */
 .section-process-extech {
   background: #020617;
-  padding-bottom: 150px;
+  /* padding-bottom: 150px; */
 }
 
 /* Grid：desktop 4 个一排，mobile 自动换行 */
@@ -2067,6 +2164,132 @@ a {
   border-color: rgba(56, 189, 248, 0.7);
   transform: translateY(-4px);
   transition: all 0.2s ease-out;
+}
+
+/* =========================
+   EXTech Studio Pricing Theme
+   Accent: #19b3ff
+   ========================= */
+
+.section-pricing .eyebrow-label {
+  color: rgba(25, 179, 255, 0.9);
+  border: 1px solid rgba(25, 179, 255, 0.35);
+  background: rgba(25, 179, 255, 0.1);
+}
+
+.section-pricing .section-title {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.section-pricing .section-subtitle {
+  color: rgba(255, 255, 255, 0.65);
+  max-width: 760px;
+}
+
+/* Base pricing card (keep your glass feel) */
+.section-pricing .pricing-card {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.06) inset,
+    0 18px 55px rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(10px);
+  border-radius: 18px;
+  padding: 26px;
+}
+
+/* Hover glow with EXTech accent */
+.section-pricing .pricing-card:hover {
+  border-color: rgba(25, 179, 255, 0.35);
+  box-shadow: 0 0 0 1px rgba(25, 179, 255, 0.16) inset,
+    0 22px 70px rgba(0, 0, 0, 0.55);
+}
+
+/* Featured card (blue highlighted) */
+.section-pricing .pricing-card-featured {
+  position: relative;
+  border: 1px solid rgba(25, 179, 255, 0.45);
+  background: linear-gradient(
+    180deg,
+    rgba(25, 179, 255, 0.14),
+    rgba(255, 255, 255, 0.05)
+  );
+  box-shadow: 0 0 0 1px rgba(25, 179, 255, 0.18) inset,
+    0 26px 80px rgba(0, 0, 0, 0.65);
+}
+
+/* "Most chosen" tag */
+.section-pricing .pricing-tag {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  color: rgba(255, 255, 255, 0.92);
+  background: rgba(25, 179, 255, 0.18);
+  border: 1px solid rgba(25, 179, 255, 0.45);
+}
+
+/* Price styling */
+.section-pricing .pricing-price {
+  margin: 18px 0 14px;
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.section-pricing .pricing-from {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.55);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.section-pricing .pricing-amount {
+  font-size: 34px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.96);
+}
+
+/* Make featured price slightly blue-tinted */
+.section-pricing .pricing-card-featured .pricing-amount {
+  color: rgba(25, 179, 255, 0.95);
+  text-shadow: 0 0 22px rgba(25, 179, 255, 0.18);
+}
+
+/* Features list */
+.section-pricing .pricing-features {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 10px;
+}
+
+.section-pricing .pricing-features li {
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.4;
+  display: flex;
+  gap: 10px;
+}
+
+/* EXTech check icon (no HTML change needed) */
+.section-pricing .pricing-features li::before {
+  content: "✓";
+  flex: 0 0 auto;
+  width: 20px;
+  height: 20px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  margin-top: 2px;
+
+  color: rgba(255, 255, 255, 0.95);
+  background: rgba(25, 179, 255, 0.18);
+  border: 1px solid rgba(25, 179, 255, 0.35);
 }
 
 /* -----------------------------

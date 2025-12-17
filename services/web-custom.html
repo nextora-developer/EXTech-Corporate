@@ -9,7 +9,7 @@
     <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
     <link rel="icon" href="../assets/img/favicon.png" type="image/png">
     <link rel="apple-touch-icon" href="../assets/img/favicon.png">
-    
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
     <link rel="stylesheet" href="../assets/css/custom.css">
@@ -17,28 +17,7 @@
 
 <body>
     <!-- Navbar (About active) -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="../index.html">
-                <img src="../assets/img/logo-extech.png" alt="EXTech Studio" class="logo-img">
-            </a>
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
-                data-bs-target="#mainNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
-                <ul class="navbar-nav align-items-lg-center">
-                    <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../about.html">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="../services.html">Our Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../contact.html">Contact</a></li>
-                    <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
-                        <a class="btn btn-extech-primary" href="https://wa.me/601157774474">Start a Project</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <div id="navbar"></div>
 
     <!-- Page header -->
     <section class="hero custom-hero" style="min-height: 60vh;">
@@ -335,18 +314,20 @@
             <div class="text-center mb-5 reveal-on-scroll">
                 <span class="eyebrow-label">Pricing</span>
                 <h2 class="section-title mb-3">Custom system development</h2>
-                <p class="section-subtitle mx-auto" style="max-width: 620px;">
-                    Every system is different — pricing depends on the modules, workflows and level of complexity
-                    your business needs. Below is a typical starting point for most custom-built systems.
+                <p class="section-subtitle mx-auto">
+                    Every system is different — pricing depends on the modules, workflows and level of complexity your
+                    business needs. Below is a typical starting point for most custom-built systems.
                 </p>
             </div>
 
-            <div class="row justify-content-center">
-                <div class="col-md-8 col-lg-6">
+            <div class="row g-4 pricing-grid justify-content-center">
+
+                <!-- Package 1: Custom web system -->
+                <div class="col-md-6 col-lg-5">
                     <div class="pricing-card pricing-card-featured h-100 reveal-on-scroll">
 
                         <div class="pricing-head">
-                            <h5 class="mb-1">Custom Web System / Dashboard</h5>
+                            <h5 class="mb-1">Custom Web System</h5>
                             <p class="small text-white-50 mb-0">
                                 Tailored system built around your workflow — roles, modules, dashboards and automation.
                             </p>
@@ -354,23 +335,36 @@
 
                         <div class="pricing-price">
                             <span class="pricing-from">From</span>
-                            <span class="pricing-amount">RM 1x,xxx+</span>
+                            <span class="pricing-amount">RM x,xxx</span>
                         </div>
 
-                        <ul class="pricing-features">
-                            <li>Requirements & scoping session</li>
-                            <li>Custom modules based on your workflow</li>
-                            <li>User roles & permission control</li>
-                            <li>Admin dashboard & analytics</li>
-                            <li>Inventory, CRM or automation features (as needed)</li>
-                            <li>Database structure & system architecture</li>
-                            <li>Testing & deployment to your hosting</li>
-                        </ul>
+                        <div class="pricing-section mt-3">
+                            <h6 class="pricing-section-title">Modules & Features</h6>
+                            <ul class="pricing-features">
+                                <li>Admin dashboard</li>
+                                <li>Role management</li>
+                                <li>User dashboard</li>
+                                <li>Payment gateway integration</li>
+                                <li>Invoice, receipt & billing module</li>
+                                <li>Affiliate / referral system</li>
+                                <li>Wallet, credit & balance management</li>
+                                <li>Reports & analytics dashboard</li>
+                                <li>Advanced reports & filters</li>
+                                <li>Data export (CSV / Excel / PDF)</li>
+                            </ul>
+                        </div>
 
+                        <div class="pricing-section mt-5">
+                            <h6 class="pricing-section-title">Free (1 Year)</h6>
+                            <ul class="pricing-features">
+                                <li>Domain registration</li>
+                                <li>Hosting Server</li>
+                                <li>SSL certificate (HTTPS)</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
 
@@ -407,61 +401,7 @@
 
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-
-            <div class="footer-grid">
-
-                <!-- Brand -->
-                <div class="footer-col">
-                    <img src="../assets/img/logo-extech.png" alt="EXTech" class="footer-logo">
-                    <p class="footer-desc">
-                        Modern web development & digital solutions for businesses that need premium execution
-                    </p>
-                </div>
-
-                <!-- Shortcuts -->
-                <div class="footer-col shortcuts">
-                    <h6 class="footer-title">Shortcuts</h6>
-                    <ul class="footer-links">
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="../about.html">About Us</a></li>
-                        <li><a href="../services.html">Our Service</a></li>
-                        <li><a href="../contact.html">Contact</a></li>
-                    </ul>
-                </div>
-
-                <!-- Our Services -->
-                <div class="footer-col footer-services">
-                    <h6 class="footer-title">Our Services</h6>
-                    <ul class="footer-links">
-                        <li><a href="web-design.html">Website Design</li>
-                        <li><a href="web-custom.html">Custom Web System</a></li>
-                        <li><a href="ecommerce.html">E-Commerce System</a></li>
-                        <li><a href="ui-design.html">UI Design</a></li>
-                        <li><a href="payment-gateway-integration.html">Payment Gateway Integration</a></li>
-                        <li><a href="web-maintenance.html">Website Maintenance</a></li>
-                    </ul>
-                </div>
-
-                <!-- Social -->
-                <div class="footer-col">
-                    <h6 class="footer-title">Follow Us</h6>
-                    <div class="footer-social">
-                        <a href="#"><i class="bi bi-facebook"></i></a>
-                        <a href="#"><i class="bi bi-instagram"></i></a>
-                        <a href="https://wa.me/601157774474"><i class="bi bi-whatsapp"></i></a>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="footer-copy">
-                © <span id="year"></span> EXTech Studio — All rights reserved.
-            </div>
-
-        </div>
-    </footer>
+    <div id="footer"></div>
 
     <button id="backToTop" class="back-to-top">
         <i class="bi bi-arrow-up"></i>

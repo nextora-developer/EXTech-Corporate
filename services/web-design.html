@@ -9,7 +9,7 @@
     <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
     <link rel="icon" href="../assets/img/favicon.png" type="image/png">
     <link rel="apple-touch-icon" href="../assets/img/favicon.png">
-    
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
     <link rel="stylesheet" href="../assets/css/custom.css">
@@ -17,28 +17,7 @@
 
 <body>
     <!-- Navbar (About active) -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="../index.html">
-                <img src="../assets/img/logo-extech.png" alt="EXTech Studio" class="logo-img">
-            </a>
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
-                data-bs-target="#mainNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
-                <ul class="navbar-nav align-items-lg-center">
-                    <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../about.html">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="../services.html">Our Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../contact.html">Contact</a></li>
-                    <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
-                        <a class="btn btn-extech-primary" href="https://wa.me/601157774474">Start a Project</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <div id="navbar"></div>
 
     <!-- Page header -->
     <section class="hero custom-hero" style="min-height: 60vh;">
@@ -114,7 +93,7 @@
         <div class="container">
 
             <!-- Landing Page -->
-            <div class="row align-items-center g-5 mb-lg-6" style=" margin-bottom: 150px;">
+            <div class="row align-items-center g-5 mb-lg-6" style=" margin-bottom: 80px;">
                 <!-- 左：文字 -->
                 <div class="col-lg-6">
                     <div class="types-text-block reveal-on-scroll">
@@ -164,8 +143,275 @@
                 </div>
             </div>
 
+            <!-- Tabs: Sections / Add-ons -->
+            <div class="d-flex justify-content-center mb-4 reveal-on-scroll">
+                <ul class="nav extech-tabs" id="landingTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="sections-tab" data-bs-toggle="tab"
+                            data-bs-target="#sectionsPane" type="button" role="tab">
+                            Core Sections
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="addons-tab" data-bs-toggle="tab" data-bs-target="#addonsPane"
+                            type="button" role="tab">
+                            Add-ons
+                        </button>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="tab-content" id="landingTabsContent">
+                <!-- Core Sections -->
+                <div class="tab-pane fade show active" id="sectionsPane" role="tabpanel">
+                    <!-- Landing Page: Sections + Add-ons (4 cards) -->
+                    <div class="row g-4 mb-lg-6" style="margin-bottom: 150px;">
+
+                        <!-- Card 1 -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="types-card reveal-on-scroll">
+                                <div class="types-card-icon">
+                                    <i class="bi bi-layout-text-window-reverse"></i>
+                                </div>
+                                <h5 class="mb-2">Hero Section</h5>
+                                <ul class="types-card-list">
+                                    <li>Clear headline (what you do + value)</li>
+                                    <li>Short supporting sub-headline</li>
+                                    <li>Primary CTA (WhatsApp / Contact Form / Book Call)</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="types-card reveal-on-scroll">
+                                <div class="types-card-icon">
+                                    <i class="bi bi-stars"></i>
+                                </div>
+                                <h5 class="mb-2">Key Benefits / Value Proposition</h5>
+                                <ul class="types-card-list">
+                                    <li>3–5 short benefit points</li>
+                                    <li>Focus on outcomes, not features</li>
+                                    <li>Icons or simple visuals</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="types-card reveal-on-scroll">
+                                <div class="types-card-icon">
+                                    <i class="bi bi-bag-check"></i>
+                                </div>
+                                <h5 class="mb-2">Product / Service Overview</h5>
+                                <ul class="types-card-list">
+                                    <li>Brief explanation of the offer</li>
+                                    <li>What the service/product includes</li>
+                                    <li>Who it is for</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="types-card reveal-on-scroll">
+                                <div class="types-card-icon">
+                                    <i class="bi bi-arrow-left-right"></i>
+                                </div>
+                                <h5 class="mb-2">How It Works</h5>
+                                <ul class="types-card-list">
+                                    <li>Step 1: Contact / Submit</li>
+                                    <li>Step 2: Process</li>
+                                    <li>Step 3: Delivery / Result</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Card 5 -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="types-card reveal-on-scroll">
+                                <div class="types-card-icon">
+                                    <i class="bi bi-chat-quote"></i>
+                                </div>
+                                <h5 class="mb-2">Testimonials</h5>
+                                <ul class="types-card-list">
+                                    <li>Client logos</li>
+                                    <li>Reviews or short quotes</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Card 6 -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="types-card reveal-on-scroll">
+                                <div class="types-card-icon">
+                                    <i class="bi bi-cursor-fill"></i>
+                                </div>
+                                <h5 class="mb-2">Call To Action (CTA)</h5>
+                                <ul class="types-card-list">
+                                    <li>Strong action-oriented message</li>
+                                    <li>Button linking to WhatsApp / Form</li>
+                                    <li>Repeated once more near bottom</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Card 7 -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="types-card reveal-on-scroll">
+                                <div class="types-card-icon">
+                                    <i class="bi bi-question-circle"></i>
+                                </div>
+                                <h5 class="mb-2">FAQ</h5>
+                                <ul class="types-card-list">
+                                    <li>3–6 common questions</li>
+                                    <li>Pricing, timeline, revisions, support</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Card 8 -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="types-card reveal-on-scroll">
+                                <div class="types-card-icon">
+                                    <i class="bi bi-layout-text-sidebar-reverse"></i>
+                                </div>
+                                <h5 class="mb-2">Footer</h5>
+                                <ul class="types-card-list">
+                                    <li>Company name</li>
+                                    <li>Contact info</li>
+                                    <li>Social links</li>
+                                    <li>Copyright</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add-ons -->
+                <div class="tab-pane fade" id="addonsPane" role="tabpanel">
+                    <div class="row g-4 mb-lg-6" style="margin-bottom: 150px;">
+                        <!-- Card 1 -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="types-card reveal-on-scroll">
+                                <div class="types-card-icon">
+                                    <i class="bi bi-chat-dots-fill"></i>
+                                </div>
+                                <h5 class="mb-2">Sticky CTA Bar</h5>
+                                <ul class="types-card-list">
+                                    <li>Floating WhatsApp / Contact button</li>
+                                    <li>Always visible while scrolling</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="types-card reveal-on-scroll">
+                                <div class="types-card-icon">
+                                    <i class="bi bi-people-fill"></i>
+                                </div>
+                                <h5 class="mb-2">Team</h5>
+                                <ul class="types-card-list">
+                                    <li>Image</li>
+                                    <li>Text</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="types-card reveal-on-scroll">
+                                <div class="types-card-icon">
+                                    <i class="bi bi-currency-dollar"></i>
+                                </div>
+                                <h5 class="mb-2">Pricing Section</h5>
+                                <ul class="types-card-list">
+                                    <li>Simple package or “Starting From” pricing</li>
+                                    <li>Comparison table (optional)</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="types-card reveal-on-scroll">
+                                <div class="types-card-icon">
+                                    <i class="bi bi-play-circle-fill"></i>
+                                </div>
+                                <h5 class="mb-2">Video Section</h5>
+                                <ul class="types-card-list">
+                                    <li>Short intro / explainer video</li>
+                                    <li>Autoplay or click-to-play</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Card 5 -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="types-card reveal-on-scroll">
+                                <div class="types-card-icon">
+                                    <i class="bi bi-bar-chart-steps"></i>
+                                </div>
+                                <h5 class="mb-2">Feature Comparison</h5>
+                                <ul class="types-card-list">
+                                    <li>Before vs After</li>
+                                    <li>Us vs Traditional approach</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Card 6 -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="types-card reveal-on-scroll">
+                                <div class="types-card-icon">
+                                    <i class="bi bi-shield-check"></i>
+                                </div>
+                                <h5 class="mb-2">Trust & Compliance Section</h5>
+                                <ul class="types-card-list">
+                                    <li>Certifications</li>
+                                    <li>Security badges</li>
+                                    <li>Industry affiliations</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Card 5 -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="types-card reveal-on-scroll">
+                                <div class="types-card-icon">
+                                    <i class="bi bi-layout-text-window-reverse"></i>
+                                </div>
+                                <h5 class="mb-2">Contact Form</h5>
+                                <ul class="types-card-list">
+                                    <li>Phone number</li>
+                                    <li>Email</li>
+                                    <li>Address</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Card 6 -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="types-card reveal-on-scroll">
+                                <div class="types-card-icon">
+                                    <i class="bi bi-layout-text-window-reverse"></i>
+                                </div>
+                                <h5 class="mb-2">Portfolio</h5>
+                                <ul class="types-card-list">
+                                    <li>Section Header</li>
+                                    <li>Portfolio Filter Tabs</li>
+                                    <li>Project Cards (Grid Layout)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
             <!-- Corporate Website -->
-            <div class="row align-items-center g-5">
+            <div class="row align-items-center g-5" style="margin-bottom: 70px;">
                 <!-- 左：图片 -->
                 <div class="col-lg-6 order-lg-1 order-2">
                     <div class="types-image-wrap reveal-on-scroll reveal-from-left">
@@ -216,8 +462,246 @@
 
             </div>
 
+            <!-- Tabs: Corporate / Add-ons -->
+            <div class="d-flex justify-content-center mb-4 reveal-on-scroll">
+                <ul class="nav extech-tabs" id="coporateTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="sections-tab" data-bs-toggle="tab"
+                            data-bs-target="#PagePane" type="button" role="tab">
+                            Core Pages
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="addons-tab" data-bs-toggle="tab" data-bs-target="#PageAddOnPane"
+                            type="button" role="tab">
+                            Add-ons
+                        </button>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="tab-content" id="corporateTabsContent">
+                <!-- Core Page -->
+                <div class="tab-pane fade show active" id="PagePane" role="tabpanel">
+                    <!-- Corporate Page: Page + Add-ons (4 cards) -->
+                    <div class="row g-4 mb-lg-6">
+
+                        <!-- Card 1 -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="types-card reveal-on-scroll">
+                                <div class="types-card-icon">
+                                    <i class="bi bi-house-door"></i>
+                                </div>
+                                <h5 class="mb-2">Home Page</h5>
+                                <ul class="types-card-list">
+                                    <li>Hero section</li>
+                                    <li>About summary (links to the About page)</li>
+                                    <li>Services overview (links to the Services page)</li>
+                                    <li>Why Choose Us</li>
+                                    <li>Process / How We Work</li>
+                                    <li>Clients / Partners</li>
+                                    <li>Call-to-Action (CTA)</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="types-card reveal-on-scroll">
+                                <div class="types-card-icon">
+                                    <i class="bi bi-lightbulb"></i>
+                                </div>
+                                <h5 class="mb-2">About Us Page</h5>
+                                <ul class="types-card-list">
+                                    <li>Hero / Page introduction</li>
+                                    <li>Company story or background</li>
+                                    <li>Mission, vision, and values</li>
+                                    <li>Team or areas of expertise (optional)</li>
+                                    <li>Why we exist / What we believe</li>
+                                    <li>Call-to-Action (Contact)</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="types-card reveal-on-scroll">
+                                <div class="types-card-icon">
+                                    <i class="bi bi-grid-1x2"></i>
+                                </div>
+                                <h5 class="mb-2">Services Page</h5>
+                                <ul class="types-card-list">
+                                    <li>Services overview</li>
+                                    <li>What the service is</li>
+                                    <li>Who it's for</li>
+                                    <li>Simplified process overview</li>
+                                    <li>Call-to-Action (CTA)</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="types-card reveal-on-scroll">
+                                <div class="types-card-icon">
+                                    <i class="bi bi-file-earmark-text"></i>
+                                </div>
+                                <h5 class="mb-2">Service Detail Page</h5>
+                                <ul class="types-card-list">
+                                    <li>Hero section with service name</li>
+                                    <li>What the service does</li>
+                                    <li>Who needs this service</li>
+                                    <li>What’s included</li>
+                                    <li>Process / Workflow</li>
+                                    <li>Frequently Asked Questions (FAQ)</li>
+                                    <li>Call-to-Action (CTA)</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Card 5 -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="types-card reveal-on-scroll">
+                                <div class="types-card-icon">
+                                    <i class="bi bi-envelope-paper"></i>
+                                </div>
+                                <h5 class="mb-2">Contact Page</h5>
+                                <ul class="types-card-list">
+                                    <li>Intro text</li>
+                                    <li>Contact form</li>
+                                    <li>Mission, vision, and values</li>
+                                    <li>Email and phone number</li>
+                                    <li>Google Map (optional)</li>
+                                    <li>Business hours</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add-ons -->
+                <div class="tab-pane fade" id="PageAddOnPane" role="tabpanel">
+                    <div class="row g-4 mb-lg-6" style="margin-bottom: 150px;">
+                        <!-- Card 1 -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="types-card reveal-on-scroll">
+                                <div class="types-card-icon">
+                                    <i class="bi bi-briefcase"></i>
+                                </div>
+                                <h5 class="mb-2">Portfolio / Case Studies</h5>
+                                <ul class="types-card-list">
+                                    <li>Hero (project summary + outcome highlight)</li>
+                                    <li>Project overview (client, industry, scope)</li>
+                                    <li>Problem & objectives</li>
+                                    <li>Solution & approach</li>
+                                    <li>Screenshots / mockups</li>
+                                    <li>Tools & technologies used</li>
+                                    <li>Call to action (view more / contact)</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="types-card reveal-on-scroll">
+                                <div class="types-card-icon">
+                                    <i class="bi bi-question-circle"></i>
+                                </div>
+                                <h5 class="mb-2">FAQ</h5>
+                                <ul class="types-card-list">
+                                    <li>Hero / intro (what this FAQ is about)</li>
+                                    <li>FAQ categories (optional)</li>
+                                    <li>Question & answer accordion</li>
+                                    <li>Pricing & process questions</li>
+                                    <li>Timeline & support questions</li>
+                                    <li>Still have questions CTA (contact / WhatsApp)</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="types-card reveal-on-scroll">
+                                <div class="types-card-icon">
+                                    <i class="bi bi-journal-text"></i>
+                                </div>
+                                <h5 class="mb-2">Blog / Insights</h5>
+                                <ul class="types-card-list">
+                                    <li>Blog hero / intro</li>
+                                    <li>Featured article</li>
+                                    <li>Article listing (grid / list)</li>
+                                    <li>Category or tag filter</li>
+                                    <li>Individual article content</li>
+                                    <li>Author info (optional)</li>
+                                    <li>Related posts</li>
+                                    <li>Newsletter / contact CTA</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="types-card reveal-on-scroll">
+                                <div class="types-card-icon">
+                                    <i class="bi bi-people"></i>
+                                </div>
+                                <h5 class="mb-2">Partners / Clients</h5>
+                                <ul class="types-card-list">
+                                    <li>Hero / intro</li>
+                                    <li>Client or partner logos</li>
+                                    <li>Industry breakdown</li>
+                                    <li>Collaboration highlights</li>
+                                    <li>Partnership benefits</li>
+                                    <li>Become a partner CTA</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Card 5 -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="types-card reveal-on-scroll">
+                                <div class="types-card-icon">
+                                    <i class="bi bi-briefcase-fill"></i>
+                                </div>
+                                <h5 class="mb-2">Careers</h5>
+                                <ul class="types-card-list">
+                                    <li>Hero / intro</li>
+                                    <li>Company culture & values</li>
+                                    <li>Open positions listing</li>
+                                    <li>Role details (responsibilities / requirements)</li>
+                                    <li>Benefits & growth opportunities</li>
+                                    <li>Application process</li>
+                                    <li>Apply now CTA</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Card 6 -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="types-card reveal-on-scroll">
+                                <div class="types-card-icon">
+                                    <i class="bi bi-shield-check"></i>
+                                </div>
+                                <h5 class="mb-2">Privacy Policy / Terms & Conditions</h5>
+                                <ul class="types-card-list">
+                                    <li>Page title & effective date</li>
+                                    <li>Introduction & scope</li>
+                                    <li>Definitions (if needed)</li>
+                                    <li>Data collection & usage</li>
+                                    <li>User rights & responsibilities</li>
+                                    <li>Service limitations & liabilities</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
+
     </section>
+
+
 
     <!-- 4. Our Process（我们如何做） -->
     <section class="section-padding section-process-extech">
@@ -287,18 +771,18 @@
 
             <div class="text-center mb-5 reveal-on-scroll">
                 <span class="eyebrow-label">Pricing</span>
-                <h2 class="section-title mb-3">Website packages</h2>
+                <h2 class="section-title mb-3">Web Design Packages</h2>
                 <p class="section-subtitle mx-auto">
-                    Transparent starting points for typical projects. Final pricing depends on pages, modules
-                    and integrations you need.
+                    Post launch support (7 days): Bug fixing support and minor layout adjustments after launch
                 </p>
             </div>
 
             <div class="row g-4 pricing-grid justify-content-center">
 
-                <!-- Package 1: Landing page -->
+                <!-- Landing Page -->
                 <div class="col-md-6 col-lg-5">
                     <div class="pricing-card card-glass-light h-100 reveal-on-scroll">
+
                         <div class="pricing-head">
                             <h5 class="mb-1">Landing Page</h5>
                             <p class="small text-white-50 mb-0">
@@ -311,40 +795,74 @@
                             <span class="pricing-amount">RM 1,5xx</span>
                         </div>
 
-                        <ul class="pricing-features">
-                            <li>Up to 1 long scrolling page</li>
-                            <li>Custom layout & on-brand design</li>
-                            <li>Basic copy layout & sections</li>
-                            <li>Contact / enquiry form setup</li>
-                            <li>Mobile & tablet optimisation</li>
-                        </ul>
+                        <div class="pricing-section mt-3">
+                            <h6 class="pricing-section-title">Included</h6>
+                            <ul class="pricing-features">
+                                <li>1-page layout (8 Section)</li>
+                                <li>Clean UI design</li>
+                                <li>Mobile responsive</li>
+                                <li>Basic animations & interactions</li>
+                                <li>Basic SEO setup</li>
+                                <li>WhatsApp / Contact CTA section</li>
+                                <li>Deployment & launch support</li>
+                                <li>Speed & performance optimized</li>
+
+                            </ul>
+                        </div>
+
+                        <div class="pricing-section mt-5">
+                            <h6 class="pricing-section-title">Free (1 Year)</h6>
+                            <ul class="pricing-features">
+                                <li>Domain registration</li>
+                                <li>Hosting Server</li>
+                                <li>SSL certificate (HTTPS)</li>
+                            </ul>
+                        </div>
+
                     </div>
                 </div>
 
-                <!-- Package 2: Highlighted Business website -->
+                <!-- Business Website -->
                 <div class="col-md-6 col-lg-5">
                     <div class="pricing-card pricing-card-featured h-100 reveal-on-scroll">
+
                         <div class="pricing-tag">Most chosen</div>
 
                         <div class="pricing-head">
                             <h5 class="mb-1">Business Website</h5>
                             <p class="small text-white-50 mb-0">
-                                Multi-page corporate site for SMEs that want a strong, modern presence.
+                                Multi-page corporate site for SMEs with a strong modern presence.
                             </p>
                         </div>
 
                         <div class="pricing-price">
                             <span class="pricing-from">From</span>
-                            <span class="pricing-amount">RM 6,xxx</span>
+                            <span class="pricing-amount">RM 4,5xx</span>
                         </div>
 
-                        <ul class="pricing-features">
-                            <li>Up to 6–8 pages (Home, About, Services, Contact, etc.)</li>
-                            <li>Custom design system for sections & components</li>
-                            <li>Blog / updates page (optional)</li>
-                            <li>Basic on-page SEO structure</li>
-                            <li>Integration with WhatsApp / contact form</li>
-                        </ul>
+                        <div class="pricing-section mt-3">
+                            <h6 class="pricing-section-title">Included</h6>
+                            <ul class="pricing-features">
+                                <li>5 pages (Home, About, Services, Contact, etc.)</li>
+                                <li>Clean, corporate UI design</li>
+                                <li>Mobile responsive</li>
+                                <li>Basic animations & interactions</li>
+                                <li>Basic SEO setup</li>
+                                <li>Contact form (1 page)</li>
+                                <li>Deployment & launch support</li>
+                                <li>Speed & performance optimized</li>
+                            </ul>
+                        </div>
+
+                        <div class="pricing-section mt-5">
+                            <h6 class="pricing-section-title">Free (1 Year)</h6>
+                            <ul class="pricing-features">
+                                <li>Domain registration</li>
+                                <li>Hosting Server</li>
+                                <li>SSL certificate (HTTPS)</li>
+                            </ul>
+                        </div>
+
                     </div>
                 </div>
 
@@ -352,6 +870,7 @@
 
         </div>
     </section>
+
 
 
 
@@ -385,61 +904,7 @@
 
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-
-            <div class="footer-grid">
-
-                <!-- Brand -->
-                <div class="footer-col">
-                    <img src="../assets/img/logo-extech.png" alt="EXTech" class="footer-logo">
-                    <p class="footer-desc">
-                        Modern web development & digital solutions for businesses that need premium execution
-                    </p>
-                </div>
-
-                <!-- Shortcuts -->
-                <div class="footer-col shortcuts">
-                    <h6 class="footer-title">Shortcuts</h6>
-                    <ul class="footer-links">
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="../about.html">About Us</a></li>
-                        <li><a href="../services.html">Our Service</a></li>
-                        <li><a href="../contact.html">Contact</a></li>
-                    </ul>
-                </div>
-
-                <!-- Our Services -->
-                <div class="footer-col footer-services">
-                    <h6 class="footer-title">Our Services</h6>
-                    <ul class="footer-links">
-                        <li><a href="web-design.html">Website Design</li>
-                        <li><a href="web-custom.html">Custom Web System</a></li>
-                        <li><a href="ecommerce.html">E-Commerce System</a></li>
-                        <li><a href="ui-design.html">UI Design</a></li>
-                        <li><a href="payment-gateway-integration.html">Payment Gateway Integration</a></li>
-                        <li><a href="web-maintenance.html">Website Maintenance</a></li>
-                    </ul>
-                </div>
-
-                <!-- Social -->
-                <div class="footer-col">
-                    <h6 class="footer-title">Follow Us</h6>
-                    <div class="footer-social">
-                        <a href="#"><i class="bi bi-facebook"></i></a>
-                        <a href="#"><i class="bi bi-instagram"></i></a>
-                        <a href="https://wa.me/601157774474"><i class="bi bi-whatsapp"></i></a>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="footer-copy">
-                © <span id="year"></span> EXTech Studio — All rights reserved.
-            </div>
-
-        </div>
-    </footer>
+    <div id="footer"></div>
 
     <button id="backToTop" class="back-to-top">
         <i class="bi bi-arrow-up"></i>

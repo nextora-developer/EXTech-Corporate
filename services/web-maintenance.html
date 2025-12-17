@@ -17,28 +17,7 @@
 
 <body>
     <!-- Navbar (About active) -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="../index.html">
-                <img src="../assets/img/logo-extech.png" alt="EXTech Studio" class="logo-img">
-            </a>
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
-                data-bs-target="#mainNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
-                <ul class="navbar-nav align-items-lg-center">
-                    <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../about.html">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="../services.html">Our Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../contact.html">Contact</a></li>
-                    <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
-                        <a class="btn btn-extech-primary" href="https://wa.me/601157774474">Start a Project</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <div id="navbar"></div>
 
     <!-- Page header -->
     <section class="hero custom-hero" style="min-height: 60vh;">
@@ -275,7 +254,7 @@
             <div class="text-center mb-5 reveal-on-scroll">
                 <span class="eyebrow-label">Pricing</span>
                 <h2 class="section-title mb-3">Website maintenance & support</h2>
-                <p class="section-subtitle mx-auto" style="max-width: 620px;">
+                <p class="section-subtitle mx-auto">
                     Keep your website secure, updated and running smoothly. Whether you prefer a yearly maintenance plan
                     or ongoing monthly support, we ensure your site stays fast, safe and professionally managed.
                 </p>
@@ -283,59 +262,89 @@
 
             <div class="row g-4 pricing-grid justify-content-center">
 
-                <!-- Yearly Maintenance -->
+                <!-- Package 1: Website Maintenance (Yearly) -->
                 <div class="col-md-6 col-lg-5">
                     <div class="pricing-card card-glass-light h-100 reveal-on-scroll">
+
                         <div class="pricing-head">
                             <h5 class="mb-1">Website Maintenance (Yearly)</h5>
                             <p class="small text-white-50 mb-0">
-                                A yearly maintenance plan to keep your website healthy, secure and up-to-date with
-                                minimal effort.
+                                For static or low-activity websites that rarely change — keep your site stable, secure
+                                and monitored.
                             </p>
                         </div>
 
                         <div class="pricing-price">
-                            <span class="pricing-from">From</span>
-                            <span class="pricing-amount">RM 1,5xx<span class="pricing-from">/year</span></span>
+                            <span class="pricing-amount">RM 1,xxx - RM 1,2xx</span>
+                            <span class="pricing-from">yearly</span>
                         </div>
 
-                        <ul class="pricing-features">
-                            <li>Annual website health check & update</li>
-                            <li>Security patching & bug fixes</li>
-                            <li>Performance optimisation (speed & cache)</li>
-                            <li>Backup configuration & yearly verification</li>
-                            <li>Up to 2 content updates per year</li>
-                            <li>Email support</li>
-                        </ul>
+                        <div class="pricing-section mt-3">
+                            <h6 class="pricing-section-title">What’s included</h6>
+                            <ul class="pricing-features">
+                                <li>Basic security checks</li>
+                                <li>Minor bug fixes</li>
+                                <li>Basic performance monitoring</li>
+                                <li>Site uptime checks</li>
+                                <li>Limited technical support</li>
+                                <li>6 content items / year
+                                    (text edit, image replacement, link update)</li>
+                            </ul>
+                        </div>
+
+                        <div class="pricing-section mt-5">
+                            <h6 class="pricing-section-title">What’s not included</h6>
+                            <ul class="pricing-features">
+                                <li>Regular content updates</li>
+                                <li>Design changes or new sections</li>
+                                <li>New features / system improvements</li>
+                                <li>Priority response time</li>
+                            </ul>
+                        </div>
+
                     </div>
                 </div>
 
-                <!-- Monthly Retainer -->
+                <!-- Package 2: Custom E-commerce System -->
                 <div class="col-md-6 col-lg-5">
                     <div class="pricing-card pricing-card-featured h-100 reveal-on-scroll">
-                        <div class="pricing-tag">Recommended</div>
+
+                        <div class="pricing-tag">Most chosen</div>
 
                         <div class="pricing-head">
-                            <h5 class="mb-1">Monthly Retainer Plan</h5>
+                            <h5 class="mb-1">Monthly Retainer</h5>
                             <p class="small text-white-50 mb-0">
-                                Ongoing monthly maintenance for businesses that need frequent updates, monitoring and
-                                priority support.
+                                For businesses that update content regularly or need continuous technical support and
+                                faster response.
                             </p>
                         </div>
 
                         <div class="pricing-price">
-                            <span class="pricing-from">From</span>
-                            <span class="pricing-amount">RM 3xx<span class="pricing-from">/month</span></span>
+                            <span class="pricing-amount">RM 3xx - RM 8xx</span>
+                            <span class="pricing-from">monthly</span>
+
                         </div>
 
-                        <ul class="pricing-features">
-                            <li>Monthly plugin, theme & system updates</li>
-                            <li>Monthly performance & security optimisation</li>
-                            <li>Automated backups + restoration support</li>
-                            <li>Up to 2–4 content updates per month</li>
-                            <li>Uptime & error monitoring</li>
-                            <li>Priority support</li>
-                        </ul>
+                        <div class="pricing-section mt-3">
+                            <h6 class="pricing-section-title">What’s included</h6>
+                            <ul class="pricing-features">
+                                <li>Ongoing technical support</li>
+                                <li>Content updates (text, images, banners)</li>
+                                <li>Minor design adjustments</li>
+                                <li>Bug fixes & troubleshooting</li>
+                                <li>Priority response time</li>
+                                <li>Advice on improvements & optimisations</li>
+                            </ul>
+                        </div>
+
+                        <div class="pricing-section mt-5">
+                            <h6 class="pricing-section-title">What’s not included</h6>
+                            <ul class="pricing-features">
+                                <li>Major redesigns</li>
+                                <li>Large feature development (quoted separately)</li>
+                            </ul>
+                        </div>
+
                     </div>
                 </div>
 
@@ -378,61 +387,7 @@
 
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-
-            <div class="footer-grid">
-
-                <!-- Brand -->
-                <div class="footer-col">
-                    <img src="../assets/img/logo-extech.png" alt="EXTech" class="footer-logo">
-                    <p class="footer-desc">
-                        Modern web development & digital solutions for businesses that need premium execution
-                    </p>
-                </div>
-
-                <!-- Shortcuts -->
-                <div class="footer-col shortcuts">
-                    <h6 class="footer-title">Shortcuts</h6>
-                    <ul class="footer-links">
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="../about.html">About Us</a></li>
-                        <li><a href="../services.html">Our Service</a></li>
-                        <li><a href="../contact.html">Contact</a></li>
-                    </ul>
-                </div>
-
-                <!-- Our Services -->
-                <div class="footer-col footer-services">
-                    <h6 class="footer-title">Our Services</h6>
-                    <ul class="footer-links">
-                        <li><a href="web-design.html">Website Design</li>
-                        <li><a href="web-custom.html">Custom Web System</a></li>
-                        <li><a href="ecommerce.html">E-Commerce System</a></li>
-                        <li><a href="ui-design.html">UI Design</a></li>
-                        <li><a href="payment-gateway-integration.html">Payment Gateway Integration</a></li>
-                        <li><a href="web-maintenance.html">Website Maintenance</a></li>
-                    </ul>
-                </div>
-
-                <!-- Social -->
-                <div class="footer-col">
-                    <h6 class="footer-title">Follow Us</h6>
-                    <div class="footer-social">
-                        <a href="#"><i class="bi bi-facebook"></i></a>
-                        <a href="#"><i class="bi bi-instagram"></i></a>
-                        <a href="https://wa.me/601157774474"><i class="bi bi-whatsapp"></i></a>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="footer-copy">
-                © <span id="year"></span> EXTech Studio — All rights reserved.
-            </div>
-
-        </div>
-    </footer>
+    <div id="footer"></div>
 
     <button id="backToTop" class="back-to-top">
         <i class="bi bi-arrow-up"></i>

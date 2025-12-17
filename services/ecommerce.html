@@ -17,28 +17,7 @@
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="../index.html">
-                <img src="../assets/img/logo-extech.png" alt="EXTech Studio" class="logo-img">
-            </a>
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
-                data-bs-target="#mainNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
-                <ul class="navbar-nav align-items-lg-center">
-                    <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../about.html">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="../services.html">Our Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../contact.html">Contact</a></li>
-                    <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
-                        <a class="btn btn-extech-primary" href="https://wa.me/601157774474">Start a Project</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <div id="navbar"></div>
 
     <!-- Page header -->
     <section class="hero custom-hero" style="min-height: 60vh;">
@@ -129,7 +108,7 @@
     <section class="section-padding section-types">
         <div class="container">
 
-            <div class="row align-items-center g-5">
+            <div class="row align-items-center g-5" style=" margin-bottom: 80px;">
                 <!-- 左：文字 -->
                 <div class="col-lg-6">
                     <div class="types-text-block reveal-on-scroll">
@@ -179,6 +158,261 @@
                         <div class="types-image-glow"></div>
                         <img src="../assets/img/ecommerce-mockup.png" alt="Ecommerce system mockup"
                             class="img-fluid rounded-4 types-image">
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center mb-4 reveal-on-scroll">
+                <ul class="nav extech-tabs" id="landingTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="modules-tab" data-bs-toggle="tab"
+                            data-bs-target="#modulesPane" type="button" role="tab">
+                            Core Modules
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="addons-tab" data-bs-toggle="tab" data-bs-target="#addonsPane"
+                            type="button" role="tab">
+                            Add-ons
+                        </button>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="tab-content" id="landingTabsContent">
+                <!-- Core Module -->
+                <div class="tab-pane fade show active" id="modulesPane" role="tabpanel">
+                    <!-- Landing Page: Sections + Add-ons (4 cards) -->
+                    <div class="row g-4 mb-lg-6">
+
+                        <!-- Card 1 -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="types-card reveal-on-scroll">
+                                <div class="types-card-icon">
+                                    <i class="bi bi-layout-text-window-reverse"></i>
+                                </div>
+                                <h5 class="mb-2">Product & category management</h5>
+                                <ul class="types-card-list">
+                                    <li>Create and manage products with ease</li>
+                                    <li>Organised categories for better browsing</li>
+                                    <li>Support for variants (size, colour, options)</li>
+                                    <li>Scalable structure for growing catalogues</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="types-card reveal-on-scroll">
+                                <div class="types-card-icon">
+                                    <i class="bi bi-stars"></i>
+                                </div>
+                                <h5 class="mb-2">Shopping cart & checkout flow</h5>
+                                <ul class="types-card-list">
+                                    <li>Smooth add-to-cart experience</li>
+                                    <li>Fast, frictionless checkout</li>
+                                    <li>Reduced cart abandonment</li>
+                                    <li>Mobile-optimised purchasing</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="types-card reveal-on-scroll">
+                                <div class="types-card-icon">
+                                    <i class="bi bi-bag-check"></i>
+                                </div>
+                                <h5 class="mb-2">Payment gateway integration</h5>
+                                <ul class="types-card-list">
+                                    <li>Secure online payment processing</li>
+                                    <li>Multiple payment methods supported</li>
+                                    <li>Reliable transaction handling</li>
+                                    <li>Instant payment confirmation</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="types-card reveal-on-scroll">
+                                <div class="types-card-icon">
+                                    <i class="bi bi-arrow-left-right"></i>
+                                </div>
+                                <h5 class="mb-2">Order & customer management</h5>
+                                <ul class="types-card-list">
+                                    <li>Centralised order management</li>
+                                    <li>Clear order status tracking</li>
+                                    <li>Customer profiles & history</li>
+                                    <li>Efficient fulfilment workflow</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Card 5 -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="types-card reveal-on-scroll">
+                                <div class="types-card-icon">
+                                    <i class="bi bi-chat-quote"></i>
+                                </div>
+                                <h5 class="mb-2">User Dashboard</h5>
+                                <ul class="types-card-list">
+                                    <li>View orders and payment status</li>
+                                    <li>Manage profile & addresses</li>
+                                    <li>Access invoices and receipts</li>
+                                    <li>Simple, user-friendly interface</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Card 6 -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="types-card reveal-on-scroll">
+                                <div class="types-card-icon">
+                                    <i class="bi bi-cursor-fill"></i>
+                                </div>
+                                <h5 class="mb-2">Admin Dashboard</h5>
+                                <ul class="types-card-list">
+                                    <li>Full control over store operations</li>
+                                    <li>Manage products, orders & users</li>
+                                    <li>Monitor sales and performance</li>
+                                    <li>Built for daily efficiency</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add-ons -->
+                <div class="tab-pane fade" id="addonsPane" role="tabpanel">
+                    <div class="row g-4 mb-lg-6">
+                        <!-- Card 1 -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="types-card reveal-on-scroll">
+                                <div class="types-card-icon">
+                                    <i class="bi bi-chat-dots-fill"></i>
+                                </div>
+                                <h5 class="mb-2">Automated Notifications System</h5>
+                                <ul class="types-card-list">
+                                    <li>Automatic order & payment alerts</li>
+                                    <li>Shipping and delivery updates</li>
+                                    <li>Email notifications</li>
+                                    <li>Improved customer communication</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="types-card reveal-on-scroll">
+                                <div class="types-card-icon">
+                                    <i class="bi bi-people-fill"></i>
+                                </div>
+                                <h5 class="mb-2">Product Reviews & Ratings</h5>
+                                <ul class="types-card-list">
+                                    <li>Customer reviews on products</li>
+                                    <li>Star rating display for trust</li>
+                                    <li>Moderation and approval control</li>
+                                    <li>Boosts purchase confidence</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="types-card reveal-on-scroll">
+                                <div class="types-card-icon">
+                                    <i class="bi bi-currency-dollar"></i>
+                                </div>
+                                <h5 class="mb-2">Role & Permission Management</h5>
+                                <ul class="types-card-list">
+                                    <li>Multiple user roles supported</li>
+                                    <li>Restricted access by permission</li>
+                                    <li>Staff, agent & admin separation</li>
+                                    <li>Improved system security</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="types-card reveal-on-scroll">
+                                <div class="types-card-icon">
+                                    <i class="bi bi-play-circle-fill"></i>
+                                </div>
+                                <h5 class="mb-2">Affiliate / agent system</h5>
+                                <ul class="types-card-list">
+                                    <li>Agent & affiliate registration</li>
+                                    <li>Commission-based sales tracking</li>
+                                    <li>Unique referral links</li>
+                                    <li>Automated commission calculation</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Card 5 -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="types-card reveal-on-scroll">
+                                <div class="types-card-icon">
+                                    <i class="bi bi-bar-chart-steps"></i>
+                                </div>
+                                <h5 class="mb-2">Membership / special pricing</h5>
+                                <ul class="types-card-list">
+                                    <li>Member-only pricing tiers</li>
+                                    <li>Special discounts for members</li>
+                                    <li>Flexible pricing rules</li>
+                                    <li>Encourages repeat purchases</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Card 6 -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="types-card reveal-on-scroll">
+                                <div class="types-card-icon">
+                                    <i class="bi bi-shield-check"></i>
+                                </div>
+                                <h5 class="mb-2">Voucher / promo code system</h5>
+                                <ul class="types-card-list">
+                                    <li>Create discount & promo codes</li>
+                                    <li>Usage limits and expiry control</li>
+                                    <li>Cart & checkout integration</li>
+                                    <li>Boost sales and campaigns</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Card 7 -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="types-card reveal-on-scroll">
+                                <div class="types-card-icon">
+                                    <i class="bi bi-layout-text-window-reverse"></i>
+                                </div>
+                                <h5 class="mb-2">Inventory & stock management</h5>
+                                <ul class="types-card-list">
+                                    <li>Real-time stock tracking</li>
+                                    <li>Low-stock alerts</li>
+                                    <li>Stock in & stock out records</li>
+                                    <li>Prevent overselling issues</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Card 8 -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="types-card reveal-on-scroll">
+                                <div class="types-card-icon">
+                                    <i class="bi bi-layout-text-window-reverse"></i>
+                                </div>
+                                <h5 class="mb-2">Wishlist & Save for Later</h5>
+                                <ul class="types-card-list">
+                                    <li>Save products for future purchase</li>
+                                    <li>Encourage return visits</li>
+                                    <li>Simple one-click wishlist</li>
+                                    <li>Improves conversion rate</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -267,7 +501,7 @@
 
                 <!-- Package 1: Standard E-commerce -->
                 <div class="col-md-6 col-lg-5">
-                    <div class="pricing-card card-glass-light h-100 reveal-on-scroll">
+                    <div class="pricing-card pricing-card-featured h-100 reveal-on-scroll">
 
                         <div class="pricing-head">
                             <h5 class="mb-1">Standard E-commerce Website</h5>
@@ -278,23 +512,39 @@
 
                         <div class="pricing-price">
                             <span class="pricing-from">From</span>
-                            <span class="pricing-amount">RM 1x,xxx+</span>
+                            <span class="pricing-amount">RM 6,8xx</span>
                         </div>
 
-                        <ul class="pricing-features">
-                            <li>Product catalog with categories</li>
-                            <li>Shopping cart & checkout flow</li>
-                            <li>Payment gateway integration (FPX / cards)</li>
-                            <li>Basic stock deduction on purchase</li>
-                            <li>Customer account & order history</li>
-                            <li>Mobile and tablet optimisation</li>
-                        </ul>
+                        <div class="pricing-section mt-3">
+                            <h6 class="pricing-section-title">Included</h6>
+                            <ul class="pricing-features">
+                                <li>Product & category management</li>
+                                <li>Shopping cart & checkout flow</li>
+                                <li>Payment gateway integration (1 Payment Gateway)</li>
+                                <li>Order & customer management</li>
+                                <li>User Dashboard</li>
+                                <li>Admin Dashboard</li>
+                                <li>Mobile responsive design</li>
+                                <li>Basic SEO setup</li>
+                                <li>Speed & performance optimisation</li>
+                                <li>Deployment & launch support</li>
+                            </ul>
+                        </div>
+
+                        <div class="pricing-section mt-5">
+                            <h6 class="pricing-section-title">Free (1 Year)</h6>
+                            <ul class="pricing-features">
+                                <li>Domain registration</li>
+                                <li>Hosting Server</li>
+                                <li>SSL certificate (HTTPS)</li>
+                            </ul>
+                        </div>
 
                     </div>
                 </div>
 
                 <!-- Package 2: Custom E-commerce System -->
-                <div class="col-md-6 col-lg-5">
+                <!-- <div class="col-md-6 col-lg-5">
                     <div class="pricing-card pricing-card-featured h-100 reveal-on-scroll">
 
                         <div class="pricing-tag">Most chosen</div>
@@ -322,7 +572,7 @@
                         </ul>
 
                     </div>
-                </div>
+                </div> -->
 
             </div>
 
@@ -361,61 +611,7 @@
 
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-
-            <div class="footer-grid">
-
-                <!-- Brand -->
-                <div class="footer-col">
-                    <img src="../assets/img/logo-extech.png" alt="EXTech" class="footer-logo">
-                    <p class="footer-desc">
-                        Modern web development & digital solutions for businesses that need premium execution
-                    </p>
-                </div>
-
-                <!-- Shortcuts -->
-                <div class="footer-col shortcuts">
-                    <h6 class="footer-title">Shortcuts</h6>
-                    <ul class="footer-links">
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="../about.html">About Us</a></li>
-                        <li><a href="../services.html">Our Service</a></li>
-                        <li><a href="../contact.html">Contact</a></li>
-                    </ul>
-                </div>
-
-                <!-- Our Services -->
-                <div class="footer-col footer-services">
-                    <h6 class="footer-title">Our Services</h6>
-                    <ul class="footer-links">
-                        <li><a href="web-design.html">Website Design</li>
-                        <li><a href="web-custom.html">Custom Web System</a></li>
-                        <li><a href="ecommerce.html">E-Commerce System</a></li>
-                        <li><a href="ui-design.html">UI Design</a></li>
-                        <li><a href="payment-gateway-integration.html">Payment Gateway Integration</a></li>
-                        <li><a href="web-maintenance.html">Website Maintenance</a></li>
-                    </ul>
-                </div>
-
-                <!-- Social -->
-                <div class="footer-col">
-                    <h6 class="footer-title">Follow Us</h6>
-                    <div class="footer-social">
-                        <a href="#"><i class="bi bi-facebook"></i></a>
-                        <a href="#"><i class="bi bi-instagram"></i></a>
-                        <a href="https://wa.me/601157774474"><i class="bi bi-whatsapp"></i></a>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="footer-copy">
-                © <span id="year"></span> EXTech Studio — All rights reserved.
-            </div>
-
-        </div>
-    </footer>
+    <div id="footer"></div>
 
     <button id="backToTop" class="back-to-top">
         <i class="bi bi-arrow-up"></i>
